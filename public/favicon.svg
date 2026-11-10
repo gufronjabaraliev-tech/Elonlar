@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25" flood-color="#042f2e" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bgGrad)" />
+
+  <!-- Inner subtle border glow -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+
+  <!-- Modern bold 'E' Monogram with bulletin spark accent -->
+  <g fill="#ffffff" filter="url(#shadow)">
+    <!-- Main spine of E -->
+    <rect x="36" y="32" width="14" height="64" rx="4" />
+    <!-- Top bar of E -->
+    <rect x="36" y="32" width="56" height="13" rx="4" />
+    <!-- Middle bar of E -->
+    <rect x="36" y="58" width="42" height="12" rx="4" />
+    <!-- Bottom bar of E -->
+    <rect x="36" y="83" width="56" height="13" rx="4" />
+    <!-- Accent indicator dot (represents a new listing notification/badge) -->
+    <circle cx="86" cy="64" r="6" fill="#38bdf8" />
+  </g>
+</svg>
